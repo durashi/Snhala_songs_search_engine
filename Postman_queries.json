@@ -1,0 +1,127 @@
+{
+   "settings":{
+      "analysis":{
+         "filter":{
+            "stemmer":{
+               "type":"stemmer",
+               "language":"english"
+            },
+            "stopwords":{
+               "type":"stop",
+               "stopwords":[
+                  "_english_"
+               ]
+            }
+         },
+         "analyzer":{
+            "custom_analyzer":{
+               "filter":[
+                  "stopwords",
+                  "lowercase",
+                  "stemmer"
+               ],
+               "type":"custom",
+               "tokenizer":"standard"
+            }
+         }
+      }
+   },
+   "mappings": {
+            "properties": {                
+                "album_name_en": {
+                    "type": "text",
+                    "analyzer":"custom_analyzer",
+                    "search_analyzer":"custom_analyzer", 
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }  
+                    }
+                },
+                "album_name_si": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "artist_name_en": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "artist_name_si": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "artist_rating": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "lyrics": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "track_id": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "track_name_en": {
+                    "type": "text",
+                    "analyzer":"custom_analyzer",
+                    "search_analyzer":"custom_analyzer", 
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }   
+                    }
+                },
+                "track_name_si": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "track_rating": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                }
+            }
+        }
+}
