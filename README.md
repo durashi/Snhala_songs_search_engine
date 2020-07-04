@@ -2,7 +2,7 @@
 
 - Corpus including 2270 Sinhala songs each with 10 attributes(meta data).
 
-###Meta data
+### Meta data
 1. track_id - track identifier
 2. track_name_en - track name in Sinhala+English
 3. track_name_si - track name in Sinhala unicode
@@ -14,7 +14,7 @@
 9. artist_rating - ratings of the artist
 10. lyrics - Sinhala lyrics of the song in Sinhala unicode
 
-###Directory
+### Directory
 
 - Lyrics: Web scraping using Elasticsearch
 - newSongs.json: Corpus for search engine
@@ -22,7 +22,7 @@
 - Postman_queries.json: Postman queries for indexing and adding custom analyzers
 - search_with_keywords.py: Support searching Sinhala queries using set of words defined. This search terms applies to search queries related to sinhala artist name, lyrics and sinhala album name fields.
 
-####Keywrods used for diffrent fileds:
+#### Keywrods used for diffrent fileds:
 - artist_name_key_words = ['ගෙ', 'ගැයූ','ගයන', 'කියන', 'කියූ', 'ගායනා']
 - lyrics_key_words = ['ලියූ', 'ලියන', 'ලිව්ව', 'රචනා', 'රචිත', 'ලීව']
 - album_name_key_words = ['ඇල්බමය', 'ඇල්බමයේ', 'ඇල්බම']
