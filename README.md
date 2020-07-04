@@ -16,11 +16,11 @@
 
 ###Directory
 
--- Lyrics: Web scraping using Elasticsearch
--- newSongs.json: Corpus for search engine
--- create_index.js: Indexing the dataset
--- Postman_queries.json: Postman queries for indexing and adding custom analyzers
--- search_with_keywords.py: Support searching Sinhala queries using set of words defined. This search terms applies to search queries related to sinhala artist name, lyrics and sinhala album name fields.
+- Lyrics: Web scraping using Elasticsearch
+- newSongs.json: Corpus for search engine
+- create_index.js: Indexing the dataset
+- Postman_queries.json: Postman queries for indexing and adding custom analyzers
+- search_with_keywords.py: Support searching Sinhala queries using set of words defined. This search terms applies to search queries related to sinhala artist name, lyrics and sinhala album name fields.
 
 ####Keywrods used for diffrent fileds:
 - artist_name_key_words = ['ගෙ', 'ගැයූ','ගයන', 'කියන', 'කියූ', 'ගායනා']
