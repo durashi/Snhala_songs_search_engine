@@ -1,4 +1,4 @@
-# Snhala_songs_search_engine
+# Sinhala_songs_search_engine
 
 - Corpus including 2270 Sinhala songs each with 10 attributes(meta data).
 
